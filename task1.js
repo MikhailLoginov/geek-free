@@ -9,7 +9,23 @@
 > 111
 */
 
-var i = parseFloat(process.argv[1]);
-var a = parseFloat(process.argv[2]);
-var b = parseFloat(process.argv[3]);
+var i = parseFloat(process.argv[2]),
+    a = parseFloat(process.argv[3]),
+    b = parseFloat(process.argv[4]),
+    normal = 0,
+    result = "";
+
+if (i>=0&&i<=10000 && a>=1&&a<=100&& b>=1&&b<=100) {
+  for (let j=0; j<String(i).length; j++) {
+    normal += +String(i)[j]*Math.pow(a, String(i).length-1-j);
+  }
+  
+  while (normal/b>=1) {
+    result += String(Math.trunc(normal/b));
+    normal -= Math.trunc(normal/b)*b;
+  }
+  result += String(normal);
+  process.stdout.write(result);
+}
+
 
