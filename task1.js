@@ -19,12 +19,10 @@ var i = parseFloat(process.argv[2]),
 for (let j=0; j<String(i).length; j++) {
   normal += +String(i)[j]*Math.pow(a, String(i).length-1-j);
 }
-console.log(normal);
   
 while (normal>=b) {
   result = String(normal % b) + result;
   normal = Math.trunc(normal/b);
-  console.log(normal);
 }
 result = normal + result;
 
