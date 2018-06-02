@@ -12,7 +12,7 @@
 */
 
 var t1 = parseFloat(process.argv[2]),
-    t2 = parseFloat(process.argv[3]);
+    t2 = parseFloat(process.argv[3]),
     hours = 0,
     minutes = 0,
     seconds = 0,
