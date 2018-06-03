@@ -21,13 +21,13 @@ if (d>=1 && d <=31 && y>=1 && y <= 2999) {
             counter = 365-d;
             if ((y%4)==0) {
                 counter++;
-            }
+            };
             break;
         case "февраля":
             counter = 365-31-d;
             if ((y%4)==0) {
                 counter++;
-            }
+            };
             break;
         case "марта":
             counter = 365-31-28-d;

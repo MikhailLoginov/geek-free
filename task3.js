@@ -62,6 +62,5 @@ if (seconds!=0) {
 };
 
 if (date!="") {
-    process.stdout.write(String(date));
+    process.stdout.write(date);
 }
-
